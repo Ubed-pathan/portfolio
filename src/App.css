@@ -51,7 +51,7 @@
 
   @media (max-width: 768px) {
     .down-arrow {
-        top: calc(100vh - 140px);
+        top: calc(100vh - 120px);
     }
 }
   
