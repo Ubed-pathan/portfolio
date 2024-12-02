@@ -10,9 +10,9 @@ function Profile() {
   return (
     <div
       id="profile"
-      className="h-screen flex flex-col justify-center items-center relative"
+      className="h-screen flex flex-col justify-center items-center relative "
     >
-      <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4 -mt-32">
+      <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4 -mt-36">
         {/* Image Section */}
         <div className="flex flex-col items-center">
           <img
