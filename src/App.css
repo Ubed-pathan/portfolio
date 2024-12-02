@@ -1,0 +1,101 @@
+
+.wave {
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;        
+    animation-iteration-count: infinite;  
+    transform-origin: 70% 70%;       
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) } 
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) } 
+    100% { transform: rotate( 0.0deg) }
+  }
+  
+  
+  
+  body { font-size: 3.5em }
+  h1 { font-size: 0.5em }
+
+.down-arrow {
+    position: absolute;
+    z-index: 10;
+    top: calc(100vh - 140px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 2px;
+    animation: jumpInfinite 2.0s infinite ease-in-out;
+  }
+  
+.down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -8px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+  }
+  
+@keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 25px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+
+
+  .relative-container {
+    position: relative; /* Required for absolute positioning inside */
+    padding-bottom: 40px; /* Adjust padding to avoid overlap */
+  }
+  
+  .repository-button {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    width: 90%;
+    padding: 3px;
+    border: 2px solid #C18DB4;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(to right, #0E1B4B 50%, #C18DB4 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+  }
+  
+  .repository-button:hover {
+    background-position: left bottom;
+  }
+  
+  .repository-button .text {
+    text-align: center;
+    line-height: 30px;
+    color: #0E1B4B;
+    transition: all 0.6s ease-out;
+  }
+  
+  .repository-button:hover .text {
+    color: #C18DB4;
+  }
+  
