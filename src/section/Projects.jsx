@@ -28,7 +28,7 @@ function Projects() {
           <div className="text-customVeryDarkBlue md:text-6xl text-4xl py-3">
             Projects
           </div>
-          <hr className="bg-customVeryDarkBlue h-0.5 w-3/4" />
+          <hr className="border-0 bg-customVeryDarkBlue h-0.5 w-3/4" />
           <div className="flex flex-wrap md:justify-center py-10 gap-8">
             {projects.map((project, index) => (
               <div

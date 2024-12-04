@@ -39,7 +39,7 @@ function Skills() {
     <div className='flex flex-row justify-center items-center min-h-screen'>
     <div className='flex flex-col items-center'>
       <div className='text-customVeryDarkBlue md:text-6xl text-4xl py-3'>Skills</div>
-      <hr className="bg-customVeryDarkBlue h-0.5 w-3/4" />
+      <hr className="border-0 bg-customVeryDarkBlue h-0.5 w-3/4" />
       <div className="flex justify-center gap-8 p-10 flex-wrap">
       {skills.map((skill, index) => (
         <div

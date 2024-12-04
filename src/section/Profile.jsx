@@ -64,7 +64,6 @@ function Profile() {
           </div>
         </div>
 
-        {/* Text Section */}
         <div className="text-center md:text-left">
           <p className="text-customVeryDarkBlue text-2xl md:text-3xl font-bold">
             <span className="font-bold">
