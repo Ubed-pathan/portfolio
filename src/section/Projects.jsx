@@ -8,15 +8,16 @@ function Projects() {
     {
       image: asProjectImage,
       name: "AS Furniture",
-      discription:
-        "An e-commerce platform for browsing, purchasing, and managing furniture products with user authentication, shopping cart,  set profile image, admin page  and order management features.",
+      discription: "E-commerce platform for furniture with user authentication, shopping cart, user profile management, and an admin page for website management.",
+      techStack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT", "Docker"],
       link: "https://github.com/Ubed-pathan/AS_BY_MERN.git",
     },
     {
       image: todoApp,
       name: "Todo Application",
       discription:
-        "A secure full-stack app using React and Spring Boot with JWT authentication and CRUD operations for todos. React and Axios power the frontend, while Spring Boot handles REST APIs and security.",
+        "Full-stack TODO app with React, Spring Boot, and JWT. Features user authentication, todo CRUD, and secure REST APIs.",
+      techStack: ["React", "Spring Boot", "Java", "MongoDB", "Tailwind CSS", "JWT", "Docker"],
       link: "https://github.com/Ubed-pathan/TODOApplication.git",
     },
   ];
@@ -32,17 +33,29 @@ function Projects() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center bg-customVeryDarkBlue md:w-[400px] sm:w-[350px] md:h-[500px] h-[550px] rounded-xl px-4 pt-3 relative"
+                className="flex flex-col items-center bg-customVeryDarkBlue md:w-[400px] sm:w-[350px] md:h-[520px] h-[550px] rounded-xl px-4 pt-3 relative"
               >
                 <div>
                   <img
                     src={project.image}
                     img={project.name}
-                    className="border-customLightPink border-2 shadow-lg rounded-xl w-full h-56 object-cover"
+                    className="border-customLightPink border-2 shadow-lg rounded-xl w-full h-56 object-fill"
                   />
                 </div>
                 <h1 className="text-customDarkPink pt-4">{project.name}</h1>
-                <p className="text-customLightPink text-justify text-xl pt-1">
+      
+                <div className="flex flex-wrap justify-center gap-2 pt-2">
+                  {project.techStack.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="bg-customDarkPink text-customVeryDarkBlue px-2 py-1 rounded text-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <p className="text-customLightPink text-justify text-base pt-4">
                   {project.discription}
                 </p>
                 <a

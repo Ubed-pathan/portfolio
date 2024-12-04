@@ -8,7 +8,7 @@ import { Link } from 'react-scroll';
 
 function Nav() {
   return (
-    <nav className="bg-customVeryDarkBlue text-customLightPink p-4 fixed bottom-4 left-1/2 transform -translate-x-1/2 w-[90%] md:w-1/2 rounded-full shadow-lg z-50" >
+    <nav className="bg-customVeryDarkBlue text-customLightPink p-4 fixed bottom-4 left-1/2 transform -translate-x-1/2 w-[90%] md:w-1/2 rounded-full shadow-lg z-50 border-customDarkPink border-2" >
       <ul className="flex justify-between md:justify-center md:space-x-16">
         <li className="group relative hover:scale-110 transition-transform">
           <Link to="profile" smooth={true} duration={700} offset={-100}>
