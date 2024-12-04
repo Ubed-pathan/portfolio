@@ -19,12 +19,12 @@ function About() {
           <p className="text-customLightPink text-lg leading-7 text-justify">
             Hey there! I’m <span className="text-customDarkPink font-bold">Ubed Pathan</span>, a passionate 
             <span className="text-customDarkPink font-bold"> MERN Stack</span>,
-            <span className="text-customDarkPink font-bold"> Java</span> and
+            <span className="text-customDarkPink font-bold"> Java</span>, and
             <span className="text-customDarkPink font-bold"> Spring Boot Developer</span>. 
             I have a knack for building dynamic, scalable web applications. I specialize in crafting seamless front-end experiences with React and leveraging the power of Node.js, Express, MongoDB, Java, and Spring Boot to build robust back-end solutions.
           </p>
           <p className="text-customLightPink text-lg leading-7 text-justify mt-4">
-          I thrive in innovative environments where technology meets creativity, delivering secure and efficient solutions. With a problem-solving mindset and a keen eye for detail, I excel in both collaborative and independent projects. I’m committed to continuous learning, staying current with emerging tech, and transforming complex ideas into clean, maintainable code.
+          I thrive in innovative environments where technology meets creativity, delivering secure and efficient solutions. With a problem-solving mindset and a keen eye for detail, I excel in both collaborative and independent projects. I’m committed to continuous learning, staying current with emerging technologies, and transforming complex ideas into clean, maintainable code.
           </p>
         </div>
       </div>
