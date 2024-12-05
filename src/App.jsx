@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Nav from './layout/Nav'
 import About from './section/About'
 import Contact from './section/Contact'

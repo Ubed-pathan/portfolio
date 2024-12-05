@@ -33,7 +33,7 @@ function Projects() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center bg-customVeryDarkBlue md:w-[400px] sm:w-[350px] md:h-[520px] h-[550px] rounded-xl px-4 pt-3 relative"
+                className="flex flex-col items-center bg-customVeryDarkBlue md:w-[400px] sm:w-[350px] md:h-[520px] h-[570px] rounded-xl px-4 pt-3 relative"
               >
                 <div>
                   <img
