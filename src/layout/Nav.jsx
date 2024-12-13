@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaRegUser } from "react-icons/fa";
 import { BsInfoSquare } from "react-icons/bs";
 import { FaCode } from "react-icons/fa6";

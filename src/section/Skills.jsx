@@ -1,4 +1,3 @@
-import React from 'react';
 import java from '../Images/java.png';
 import spring from '../Images/spring.png';
 import spring_boot from '../Images/spring_boot.png';

@@ -24,7 +24,7 @@ function Contact() {
               <img
                 src={github}
                 alt="Git Image"
-                className="h-20 w-20 cursor-pointer"
+                className="h-20 w-20 cursor-pointer hover:scale-110 transition"
               />
             </a>
             <a
@@ -35,7 +35,7 @@ function Contact() {
               <img
               src={linkedin}
               alt="LinkedIn Image"
-              className="h-20 w-20 cursor-pointer"
+              className="h-20 w-20 cursor-pointer hover:scale-110 transition"
             />
             </a>
             <a
@@ -46,14 +46,14 @@ function Contact() {
               <img
               src={twitter}
               alt="Twitter Image"
-              className="h-20 w-20 cursor-pointer"
+              className="h-20 w-20 cursor-pointer hover:scale-110 transition"
             />
             </a>
             <a href="mailto:ubedpathan818@gmail.com">
             <img
               src={email}
               alt="Email Image"
-              className="h-20 w-20 cursor-pointer"
+              className="h-20 w-20 cursor-pointer hover:scale-110 transition"
             />
             </a>
           </div>
