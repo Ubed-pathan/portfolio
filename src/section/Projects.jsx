@@ -16,7 +16,7 @@ function Projects() {
     },
     {
       image: todoApp,
-      name: "Todo Application",
+      name: "Todo App",
       discription:
         "Full-stack TODO app with React, Spring Boot, and JWT. Features user authentication, todo CRUD, and secure REST APIs.",
       techStack: ["React", "Spring Boot", "Java", "MongoDB", "Tailwind CSS", "JWT", "Docker"],
@@ -28,7 +28,7 @@ function Projects() {
       name: "Talkify",
       discription:
       "Interactive chat application built with React, Node.js, and WebSocket. Includes real-time messaging, user authentication, and secure data handling.",
-      techStack: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "Tailwind CSS", "JWT", "Docker"],
+      techStack: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "Tailwind CSS", "JWT"],
       link: "https://github.com/Ubed-pathan/Talkify",
       live: "https://talkify-zdlm.onrender.com/",
     },
