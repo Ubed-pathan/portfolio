@@ -1,17 +1,62 @@
-
 import { HiOutlineStatusOnline } from "react-icons/hi";
 import asProjectImage from "../Images/asProjectImage.png";
 import todoApp from "../Images/todoApp.png";
 import talkify from "../Images/talkify.png";
+import nexora from "../Images/nexora.png";
 import "../App.css";
 
 function Projects() {
   const projects = [
     {
+      image: nexora,
+      name: "Nexora",
+      discription:
+        "A social media platform built with Java, Spring Boot, React and PostgreSQL. Features user authentication, posts, likes, comments, and profile management.",
+      techStack: [
+        "Java",
+        "Spring Boot",
+        "Spring Security",
+        "PostgreSQL",
+        "React",
+        "Tailwind CSS",
+        "JWT",
+        // "Maven",
+      ],
+
+      link: "https://github.com/Ubed-pathan/Nexora",
+      live: "https://nexora--one.vercel.app/",
+    },
+    {
+      image: talkify,
+      name: "Talkify",
+      discription:
+        "Interactive chat application built with React, Node.js, and WebSocket. Includes real-time messaging, user authentication, and secure data handling.",
+      techStack: [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Socket.io",
+        "Tailwind CSS",
+        "JWT",
+      ],
+      link: "https://github.com/Ubed-pathan/Talkify",
+      live: "https://talkify-zdlm.onrender.com/",
+    },
+    {
       image: asProjectImage,
       name: "AS Furniture",
-      discription: "E-commerce platform for furniture with user authentication, shopping cart, user profile management, and an admin page for website management.",
-      techStack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT", "Docker"],
+      discription:
+        "E-commerce platform for furniture with user authentication, shopping cart, user profile management, and an admin page for website management.",
+      techStack: [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Tailwind CSS",
+        "JWT",
+        "Docker",
+      ],
       link: "https://github.com/Ubed-pathan/AS_BY_MERN.git",
     },
     {
@@ -19,18 +64,17 @@ function Projects() {
       name: "Todo App",
       discription:
         "Full-stack TODO app with React, Spring Boot, and JWT. Features user authentication, todo CRUD, and secure REST APIs.",
-      techStack: ["React", "Spring Boot", "Java", "MongoDB", "Tailwind CSS", "JWT", "Docker"],
+      techStack: [
+        "React",
+        "Spring Boot",
+        "Java",
+        "MongoDB",
+        "Tailwind CSS",
+        "JWT",
+        "Docker",
+      ],
       link: "https://github.com/Ubed-pathan/TODOApplication.git",
       live: "https://todo-application-vert-nine.vercel.app/",
-    },
-    {
-      image: talkify,
-      name: "Talkify",
-      discription:
-      "Interactive chat application built with React, Node.js, and WebSocket. Includes real-time messaging, user authentication, and secure data handling.",
-      techStack: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "Tailwind CSS", "JWT"],
-      link: "https://github.com/Ubed-pathan/Talkify",
-      live: "https://talkify-zdlm.onrender.com/",
     },
   ];
   return (
@@ -55,8 +99,7 @@ function Projects() {
                   />
                 </div>
 
-
-                <div className="flex justify-center items-center pt-4 gap-8"> 
+                <div className="flex justify-center items-center pt-4 gap-8">
                   {project.live && (
                     <a
                       href={project.live}
@@ -64,17 +107,19 @@ function Projects() {
                       rel="noopener noreferrer"
                       // className="flex justify-center items-center"
                     >
-                      <button 
+                      <button
                         onClick={() => window.open(project.live, "_blank")}
                         className="flex justify-center items-center"
                       >
-                        <span className="text-lg flex justify-between items-center gap-1 bg-white rounded-lg px-[2px] text-customLightBlue hover:bg-gray-600 hover:text-white transform duration-300"><HiOutlineStatusOnline size={25}/> Live</span>
+                        <span className="text-lg flex justify-between items-center gap-1 bg-white rounded-lg px-[2px] text-customLightBlue hover:bg-gray-600 hover:text-white transform duration-300">
+                          <HiOutlineStatusOnline size={25} /> Live
+                        </span>
                       </button>
                     </a>
                   )}
                   <h1 className="text-customDarkPink">{project.name}</h1>
-                  </div>
-      
+                </div>
+
                 <div className="flex flex-wrap justify-center gap-2 pt-2">
                   {project.techStack.map((tech, i) => (
                     <span
