@@ -74,7 +74,7 @@ function Profile() {
               I am <span className="text-fuchsia-800">Ubed Pathan,</span>
             </span>{" "}
             <br />
-            <span className="font-bold">a MERN Stack and Java Developer.</span>
+            <span className="font-bold">a MERN Stack and Java Full-Stack Developer.</span>
           </p>
         </div>
       </div>
